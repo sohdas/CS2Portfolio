@@ -1,38 +1,26 @@
 ﻿body {
     font-family: 'Open Sans', sans-serif;
-    font-size:12px;
-
+    font-size: 12px;
     color: whitesmoke;
-
     background-color: rgb(12, 2, 42);
-    
     margin: auto;
-    
-    padding-left:20%;
-    padding-right:20%;
-    padding-bottom:10%;
-
-    line-height:18px;
-
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    line-height: 18px;
     transition: ease-in-out 0.75s;
-    
 }
 
 
-.header{
+.header {
     margin: auto;
-    
-    text-align:center;
-
+    text-align: center;
     padding: 10px;
-
     font-family: 'Lucida Sans';
-
 }
 
-.header:hover{
-    
-}
+    .header:hover {
+    }
 
 .underline-effect:after {
     content: '';
@@ -40,13 +28,12 @@
     display: inline-block;
     height: 1em;
     width: 100%;
-    border-bottom:2px solid;
+    border-bottom: 2px solid;
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: scale(0,1);
     transform: scale(0,1);
-
 }
 
 .underline-effect:hover:after {
@@ -55,14 +42,14 @@
     transform: scale(1);
 }
 
-.underline-effect:hover{
-    transform:scale(1.5);
+.underline-effect:hover {
+    transform: scale(1.5);
     transition: ease 0.75s;
-    background-color:whitesmoke;
-    color:black;
+    background-color: whitesmoke;
+    color: black;
 }
 
-.underline-effect{
+.underline-effect {
     padding: 15px;
     transition: ease 0.75s;
 }
@@ -75,55 +62,56 @@
     letter-spacing: 8px;
 }
 
-#pageTitle:after {
-    content: '';
-    margin: auto;
-    display: inline-block;
-    height: 1em;
-    width: 100%;
-    border-bottom: 2px solid;
-    opacity: 0;
-    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
-    transition: opacity 0.45s, transform 0.45s;
-    -webkit-transform: scale(0,1);
-    transform: scale(0,1);
-}
+    #pageTitle:after {
+        content: '';
+        margin: auto;
+        display: inline-block;
+        height: 1em;
+        width: 100%;
+        border-bottom: 2px solid;
+        opacity: 0;
+        -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+        transition: opacity 0.45s, transform 0.45s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+    }
 
-#pageTitle:hover:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-#pageTitle:before {
-    content: '';
-    margin: auto;
-    display: inline-block;
-    height: 1em;
-    width: 100%;
-    border-top: 2px solid;
-    opacity: 0;
-    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
-    transition: opacity 0.45s, transform 0.45s;
-    -webkit-transform: scale(0,1);
-    transform: scale(0,1);
-}
+    #pageTitle:hover:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 
-#pageTitle:hover:before {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
+    #pageTitle:before {
+        content: '';
+        margin: auto;
+        display: inline-block;
+        height: 1em;
+        width: 100%;
+        border-top: 2px solid;
+        opacity: 0;
+        -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+        transition: opacity 0.45s, transform 0.45s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+    }
+
+    #pageTitle:hover:before {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 
 /*end of page title stuff*/
-#myName{
-    font-size:18px;
+#myName {
+    font-size: 18px;
     margin: auto;
-    text-align:center;
+    text-align: center;
 }
 
-h3{
+h3 {
     display: inline-block;
-    text-align:center;    
+    text-align: center;
 }
 
 /* image stuff*/
@@ -132,78 +120,51 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-
-    background-color:white;
-    opacity:0.5;
-    transition:0.5s ease-out .5s;
-
-}
-
-img:hover{
-    opacity:1;
-    width:100%;
-    transition: 0.3s;
+    background-color: white;
+    transition: 0.5s ease-out .5s;
 }
 
 figure {
     transition-property: width;
-
     display: block;
     margin: auto;
-    width: 20%;
+    width: 40%;
     border: 2px solid white;
     position: relative;
     overflow: hidden;
-
     transition: 0.5s ease-out .6s;
 }
 
 figcaption {
     font-family: 'Nunito Sans';
-    font-size:14px;
+    font-size: 14px;
     font-style: italic;
     position: absolute;
     background: white;
     color: grey;
     padding: 10px 20px;
-    padding-top:7px;
-
-
+    padding-top: 7px;
     opacity: 0;
-    bottom:0;
+    bottom: 0;
     left: inherit;
-
-    -webkit-transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    -o-transition: all .6s ease;
-    
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 
 figure:hover figcaption {
     opacity: 1;
     left: 0;
-    transition: .6s;
-    transition-delay: .5s;
+    transition: .3s;
 }
 
-figure:hover{
-    width:50%;
-
-    border: 6px solid white;
-
-    transition: 0.5s;
-}
-
-figure:hover body{
-    background-color: rgb(32, 96, 51);
-
-    
-
-    transition: 0.75s;
-}
+    figure:hover body {
+        background-color: rgb(32, 96, 51);
+        transition: 0.75s;
+    }
 
 /*image stuff*/
-.footer{
-    margin-top:10%;
-    margin-bottom:0;
+.footer {
+    margin-top: 10%;
+    margin-bottom: 0;
 }
