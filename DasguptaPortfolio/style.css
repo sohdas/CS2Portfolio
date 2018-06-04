@@ -2,7 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: whitesmoke;
-    background-color: rgb(12, 2, 42);
+    background-color: hsl(225, 82%, 6%);
     margin: auto;
     padding-left: 20%;
     padding-right: 20%;
@@ -10,7 +10,6 @@
     line-height: 18px;
     transition: ease-in-out 0.75s;
 }
-
 
 .header {
     margin: auto;
@@ -21,6 +20,42 @@
 
     .header:hover {
     }
+
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'sn fl yb'
+        'hr hr hr'
+        'ucc ucs ucd';
+}
+
+#safenet {
+    grid-area: sn;
+}
+
+#file {
+    grid-area: fl;
+}
+
+#yearbook {
+    grid-area: yb;
+}
+
+#heroes {
+    grid-area: hr;
+}
+
+#uc-client {
+    grid-area: ucc;
+}
+
+#uc-server {
+    grid-area: ucs;
+}
+
+#uc-database {
+    grid-area: ucd;
+}
 
 .underline-effect:after {
     content: '';
@@ -46,7 +81,7 @@
     transform: scale(1.5);
     transition: ease 0.75s;
     background-color: whitesmoke;
-    color: black;
+    color: rgba(3, 3, 3, 0.99);
 }
 
 .underline-effect {
@@ -59,7 +94,7 @@
 #pageTitle {
     font-size: 56px;
     text-align: center;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
 }
 
     #pageTitle:after {
@@ -110,6 +145,7 @@
 }
 
 h3 {
+    letter-spacing: 3px;
     display: inline-block;
     text-align: center;
 }
@@ -158,10 +194,10 @@ figure:hover figcaption {
     transition: .3s;
 }
 
-    figure:hover body {
-        background-color: rgb(32, 96, 51);
-        transition: 0.75s;
-    }
+figure:hover body {
+    background-color: rgb(32, 96, 51);
+    transition: 0.75s;
+}
 
 /*image stuff*/
 .footer {
