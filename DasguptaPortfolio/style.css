@@ -99,16 +99,18 @@
 
     #pageTitle:after {
         content: '';
+        transition-delay:3s;
         margin: auto;
         display: inline-block;
         height: 1em;
         width: 100%;
         border-bottom: 2px solid;
-        opacity: 0;
+       //opacity: 0;
         -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
         transition: opacity 0.45s, transform 0.45s;
         -webkit-transform: scale(0,1);
         transform: scale(0,1);
+
     }
 
     #pageTitle:hover:after {
@@ -124,7 +126,7 @@
         height: 1em;
         width: 100%;
         border-top: 2px solid;
-        opacity: 0;
+       // opacity: 0;
         -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
         transition: opacity 0.45s, transform 0.45s;
         -webkit-transform: scale(0,1);
